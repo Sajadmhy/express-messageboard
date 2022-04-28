@@ -1,0 +1,10 @@
+extends layout 
+
+block content
+  form(action="/new", method="POST")
+    h2 Form
+    p message
+        input(type="text", name="message", value="")
+    p username
+        input(type="text", name="username", value="")
+    input(type='submit', value="Submit")
